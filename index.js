@@ -14,6 +14,9 @@ app.get("/", (_req, res) => {
 });
 
 app.use(HomeRouters);
+app.use("*", (_req, res) => {
+  return res.status(404).send("Not Found!");
+});
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}.`);
