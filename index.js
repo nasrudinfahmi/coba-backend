@@ -1,7 +1,7 @@
 import express from "express";
 import helmet from "helmet";
 import "dotenv/config";
-import HomeRouters from "./routes/home.js";
+import HomeRouters from "./src/routes/home.js";
 
 const app = express();
 const port = process.env.PORT || 6000;
